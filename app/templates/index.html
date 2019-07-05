@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ super() }} - Index{% endblock %}
+
+{% block content %}
+
+
+
+  <div class="container">
+     
+
+      </div>
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav"></ul>
+      </div>
+
+  </div>
+
+
+
+<div class="jumbotron">
+<div class="container">
+<h1>FUTBRASIL</h1>
+<p>O futebol que revolucionou o mundo inteiro</p>
+
+</div>
+</div>
+
+
+<div class="container">
+
+<article class="col-md-10 article-intro">
+<h2> Origem do Futebol</h2>
+
+
+<P> Não se sabe ao certo como o esporte se iniciou, mas encontra-se na história antiga, vários tipos de esportes praticados com o uso da bola e muito semelhantes ao Futebol, embora não possuísse a organização e regras atuais. O mais parecido com o Futebol atual é um jogo encontrado na Grécia, por volta do século I a.C., esse jogo era praticado por soldados que se dividiam em duas equipes de nove pessoas e jogavam com uma bola cheia de areia. Foram encontrados também jogos não tão semelhantes na China Antiga, por volta de 3000 anos a.C., o qual era jogado como treinamento militar, e no Japão Antigo um jogo praticado por membros da corte. </P>
+<br> 
+  
+  <div id="slider">
+
+      <ul>
+      <li><img src="{{url_for('static', filename="imgs/img1.jpg")}}"  ></li>
+  </div>
+
+    <br><br>
+  <article class="col-md-10 article-intro">		
+<h1> A Copa do Mundo </h1>
+<p>A Copa do Mundo é o mais prestigiado torneio de futebol, bem como o evento esportivo com maior audiência no mundo, superando até mesmo os Jogos Olímpicos. Na edição de 2014, em média cerca de 186,7 milhões de pessoas assistiram cada partida, e a partida final, entre Alemanha e Argentina, teve a audiência de 1,013 bilhões de pessoas, o que corresponde a cerca de catorze por cento da população mundial.</p>
+</article>
+
+<article class="col-md-12 article-intro">
+
+
+    
+      <img src="{{url_for('static', filename="imgs/copa.jpg")}}" rel="lightbox" alt="Processador">
+    
+  
+
+  
+</article>
+
+<article class="col-md-10 article-intro">
+  <h2> Table Campeonato Brasileiro de 2000</h2><br>
+
+<p>O campeonato Brasileiro de 2000 foi o ultimo campeonato desputado por mata-mata consagrando campeão o Clube de Regatas Vasco da Gama☩☩☩<br><br>
+  
+</p>
+
+  <table cellspacing="0" cellpadding="2">
+  <thead align="left">
+    <th>Posição</th>
+    <th>Equipe</th>
+    <th>Vitorias</th>
+    <th>Derrotas</th>
+    <th>Jogos</th>
+    
+  </thead>
+  <tbody>
+      <tr>
+      <td width="5%">1</td>
+      <td class="Cidades" width="15%">Cruzeiro</td>
+      <td width="15%">12</td>
+      <td width="15%">3</td>
+      <td width="15%">24</td>
+      
+    </tr>
+    <tr class="Linhas">
+      <td>2</td>
+      <td class="Cidades">Sport Recife</td>
+      <td>12</td>
+      <td>6</td>
+      <td>24</td>
+      
+    </tr>
+    <tr>
+      <td>3</td>
+      <td class="Cidades">Fluminense</td>
+      <td>12</td>
+      <td>6</td>
+      <td>24</td>
+      
+    </tr>
+    <tr class="Linhas">
+      <td>4</td>
+      <td class="Cidades">Goias</td>
+      <td>11</td>
+      <td>7</td>
+      <td>24</td>
+      
+    </tr>
+    <tr>
+      <td>5</td>
+      <td class="Cidades">São Paulo</td>
+      <td>10</td>
+      <td>5</td>
+      <td>24</td>
+      
+    </tr>
+    <tr class="Linhas">
+      <td>6</td>
+      <td class="Cidades">Vasco</td>
+      <td>11</td>
+      <td>7</td>
+      <td>24</td>
+      
+    </tr>
+    <tr>
+      <td>7</td>
+      <td class="Cidades">Ponte Preta</td>
+      <td>11</td>
+      <td>8</td>
+      <td>24</td>
+      
+    </tr>
+    <tr class="Linhas">
+      <td>8</td>
+      <td class="Cidades">Internacional</td>
+      <td>10</td>
+      <td>6</td>
+      <td>24</td>
+      
+    </tr>
+    <tr>
+      <td>9</td>
+      <td class="Cidades">Athletico-PR</td>
+      <td>11</td>
+      <td>8</td>
+      <td>24</td>
+      
+    </tr>
+    <tr class="Linhas">
+      <td>10</td>
+      <td class="Cidades">Gremio</td>
+      <td>10</td>
+      <td>7</td>
+      <td>24</td>
+      
+    </tr>
+  </tbody>
+</table>
+  
+</article>
+</div>
+  <br><br>
+      
+
+      <br>
+    
+  </div>		
+</article>
+
+
+
+
+<br><br>
+    {% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    
+<div class="container">
+     
+
+      </div>
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav"></ul>
+      </div>
+
+  </div>    
+
+
+  <div class="jumbotron">
+    <div class="container">
+        <h1>FUTBRASIL</h1>
+        <p>O futebol que revolucionou o mundo inteiro</p>
+    
+    </div>
+</div>
+<div class="col-md-4 col-md-offset-4">
+   
+    
+    
+    <h2>Login</h2>
+    <form action="" method="POST">
+        {{ form.csrf_token }}
+        <div class="form-group">
+            <label>Username</label>    
+            {{ form .username(class="form-control",
+            placeholder="seu_usuario") }}
+            
+        </div>   
+        <div class="form-group">
+            <label>Password</label>
+            {{ form.password(class="form-control") }}
+        </div>
+        <div class="checkbox">
+            <label>
+                {{ form.remember_me }} Remember_me
+            </label>
+        </div>
+        <button type="submit" value="cadastrar">Enviar</button>
+        <button type="reset" value="Reset">Limpar</button>
+    </form>
+    </div><br><br>
+{% endblock %}

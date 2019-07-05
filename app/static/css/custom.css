@@ -1,0 +1,262 @@
+body {
+	padding-top: 50px;
+	color: #000;
+	background-color: #000;
+	}
+	
+.jumbotron{
+	background-color: #0a0;
+	color: #fff;
+}
+
+.fixar-rodape{
+  position: absolute;
+  bottom: 0;
+  background-color: #0a0;
+  color: #fff;
+  width : 1000px; 
+  height : 65px; 
+  position:static;
+  min-width: 99%;
+  /*margin-bottom: 25px;*/
+
+}
+
+label{
+	color: #fff;
+}
+
+p{
+	color: #fff;
+}
+
+ H1, h2, h3, h4, h5, h6 {
+	color: #fff;
+	}
+
+.h1{
+	margin: center;
+}
+
+#conteudoleft{
+	width:600px;
+	float:right;
+	margin-bottom: 40px;
+	padding-right: 20px;
+}
+	
+.feature {
+	background-color: bluegreen;
+	color: greenblue;
+	}
+	
+.article-intro {
+    margin-bottom: 25px;
+}
+
+.footer-blurb {
+    padding: 30px 0;
+    background-color: goldenrod;
+    color: black;
+}
+    
+.footer-blurb-item {
+    padding: 30px;
+    }
+ 
+.small-print {
+	background-color: #fff;
+	padding: 30px 0;
+}
+
+
+
+*{padding:0;margin:0}		
+
+.mtlsr-lightbox{display:none;position:absolute;width:100%;height:100%;z-index:9999;top:0;}
+.mtlsr-lightbox .image-in-lightbox{max-width:350px;width:100%;position:absolute;z-index:999;top:10%; margin-left: auto;margin-right: auto;left: 0;right: 0;}
+
+.close, .next, .prev{position:absolute;z-index:9999;}
+.close{position:absolute;right:20px;top:20px}
+.next, .prev{top:50%}
+.next{right:20px;}
+.prev{left:20px;}
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  height: 300px;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
+/* SLIMBOX */
+
+#lbOverlay {
+	position: fixed;
+	z-index: 9999;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	cursor: pointer;
+}
+
+#lbCenter, #lbBottomContainer {
+	position: absolute;
+	z-index: 9999;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.lbLoading {
+	background: #fff url(loading.gif) no-repeat center;
+}
+
+#lbImage {
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: 10px solid #fff;
+	background-repeat: no-repeat;
+}
+
+#lbPrevLink, #lbNextLink {
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 50%;
+	outline: none;
+}
+
+#lbPrevLink {
+	left: 0;
+}
+
+#lbPrevLink:hover {
+	background: transparent url(prevlabel.gif) no-repeat 0 15%;
+}
+
+#lbNextLink {
+	right: 0;
+}
+
+#lbNextLink:hover {
+	background: transparent url(nextlabel.gif) no-repeat 100% 15%;
+}
+
+#lbBottom {
+	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #666;
+	line-height: 1.4em;
+	text-align: left;
+	border: 10px solid #fff;
+	border-top-style: none;
+}
+
+#lbCloseLink {
+	display: block;
+	float: right;
+	width: 66px;
+	height: 22px;
+	background: transparent url(closelabel.gif) no-repeat center;
+	margin: 5px 0;
+	outline: none;
+}
+
+#lbCaption, #lbNumber {
+	margin-right: 71px;
+}
+
+#lbCaption {
+	font-weight: bold;
+}
+
+tbody{
+  color: black;
+  background-color: #E0E0E0;
+}
+
+.Linhas{
+  background-color: #F0F0F0;
+}
+
+.Cidades {
+  color:#0D5188;
+}
+
+table{
+  margin: auto;
+  line-height: 2;
+  font-style: normal;
+  font-size: 15px;
+  font-family: Arial,sans-serif;
+  width:550px;
+}
+
+thead{
+  color: white;
+  background-color: #78b200;
+}
+
+

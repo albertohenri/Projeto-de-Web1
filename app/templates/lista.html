@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ super() }} - Lista{% endblock %}
+
+{% block content %}
+
+
+<div class="jumbotron">
+    <h1>Lista de Clientes </h1>
+    <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+    <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+</div>
+
+<table>   
+    <tr>
+        <td>Id</td>
+        <td>Username  </td>
+        <td>Password  </td>
+        <td>Name </td>
+        <td>Email  </td>
+        <td>Excluir</td>
+        <td>Alterar</td>
+        
+
+    </tr>
+    {% for User in user  %}
+    <tr>
+        <td>{{ User.id }}</td>
+        <td>{{ User.username }}</td>
+        <td>{{User.password}}</td>
+        <td>{{User.name}}</td>
+        <td>{{User.email}}</td>
+        <td><a href="/excluir/{{ User.id }}">Excluir</a> </td>
+        <td><a href="/alterar/{{ User.id }}">Alterar</a> </td>
+        <br>
+    </tr>
+    {% endfor %}
+    
+</table>
+<a href="/index">Voltar</a>
+    {% endblock %}

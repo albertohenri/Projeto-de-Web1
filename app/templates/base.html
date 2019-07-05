@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+
+    <title>{% block title %}Futebol{% endblock %}</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/jumbotron-narrow/">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/bootstrap.min.css") }}">
+    
+
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/custom.css") }}">
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/jumbotron-narrow.css") }}">
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename="jumbotron-narrow.css") }}">
+    <!-- Custom styles for this template -->
+    <link href="jumbotron-narrow.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+
+    <[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix"><div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="{{ url_for('index')}}">Home </a></li>
+            <li role="presentation" class="active"><a href="{{ url_for('lista')}}">Clientes </a></li>
+
+            <li role="presentation"><a href="{{ url_for('cadastrar')}}"> Cadastrar </a></li>
+            {% if current_user.is_authenticated %}
+                <li><a href="{{ url_for('logout') }}"> Logout </a></li>
+            {% else %}
+                <li><a href="{{ url_for('login') }}"> Login</a></li>
+            {% endif %}
+          </ul><!-- Custom styles for this template -->
+        </nav>
+        <h3 class="text-muted">Futebol</h3>
+      </div>
+
+      <div class="alert alert-warning">
+      {% with messages = get_flashed_messages() %}
+          {% if messages %}<link rel="stylesheet" href="{{ url_for('static', filename="css/bootstrap.min.css") }}">
+
+ 
+          <link href="css/custom.css" rel="stylesheet">
+      
+            <ul class=flashes>
+              {% for message in messages %}
+                <li> {{ message }} </li>
+              {% endfor %}  
+            </ul>
+        </div>
+          {% endif %}
+        {% endwith %}
+
+
+      {%block content %}
+      {% endblock %}
+
+      
+      
+
+    </div> <!-- /container -->
+    <footer class="footer">
+      <p>&copy; 2016 Company, Inc.</p>
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>   
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src='js/jquery-1.8.3.min.js'></script>
+    <script src='js/jquery.elevateZoom-2.5.5.min.js'></script>
+    <script src="js/slider.js"></script>
+    <script src='js/mtlsr-lightbox.js'></script>
+    <script src="js/slimbox2.js"></script>
+    <script> $('#zoom_01').elevateZoom();	</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/holder.min.js"></script>
+    
+  </body>
+</html>

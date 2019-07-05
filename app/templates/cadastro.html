@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class="container">
+     
+
+</div>
+<!-- Navbar links -->
+<div class="collapse navbar-collapse" id="navbar">
+	<ul class="nav navbar-nav"></ul>
+</div>
+
+</div>
+
+<div class="jumbotron">
+		<div class="container">
+			<h1>FUTBRASIL</h1>
+			<p>O futebol que revolucionou o mundo inteiro</p>
+		
+		</div>
+	</div>
+
+
+    <div class="container">
+
+        <!-- Heading -->
+        
+            <article class="col-md-4 article-intro">
+                <h1 class="page-header">Cadastrar</h1>
+				
+					<form action="{{url_for('cadastro')}}" method="POST" >
+					<label>Username: </label><br>   
+					<input type="text" name="nome"><br>
+					
+					<label>password:</label> <br>
+					<input type="password" name="password"><br>
+					
+					<label>Nome:</label> <br>
+					<input type="text" name="nome"><br>
+					
+					<label>Email:</label>	<br>
+					<input type="email" name="email"><br>
+				
+					
+					<br>
+					<button type="submit" value="cadastrar">Enviar</button>
+					<button type="reset" value="Reset">Limpar</button>
+					</form>
+					</article>
+			
+     
+        
+			<article class="col-md-4 article-intro">
+			<h1 class="page-header">Campo de Futebol</h1>
+                <a href="#">
+					<img id="zoom_01" src="{{url_for('static', filename="imgs/locali_mini.jpg")}}" data-zoom-image="{{url_for('static', filename="imgs/locali.jpg")}}"/>
+                </a>
+				<p>(Use zoom na imagem)</p>
+                <h3>
+                 
+     
+				
+            </article>
+
+      
+        
+
+    </div>
+{% endblock %}
+    
